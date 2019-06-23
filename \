@@ -1,0 +1,9 @@
+
+//Parses an array of integers from the command line
+let string = (process.argv.slice(2));
+
+timeConversion(string);
+
+function timeConversion(s) {
+
+}

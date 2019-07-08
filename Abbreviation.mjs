@@ -39,8 +39,7 @@ function abbreviation(a, b) {
   //must always be true
   for(let i = 0; i <= a.length; i++) {
     arr[i] = [];
-    arr[i][0] = !hasUpperCase(a.substr(0, i));
-    //console.log(!hasUpperCase(a.substr(0, i)));
+    arr[i][0] = true;
   }
   //console.log(arr);
 
@@ -72,7 +71,7 @@ function abbreviation(a, b) {
       // the first value from the penultimate array
       else if (temp !== true && a.charAt(i - 1).toUpperCase() === b.charAt(j - 1)) {
         console.log(`The a character '${a.charAt(i-1)}' and the b character '${b.charAt(j-1)}' are equal after the a character has been capitalized therefore the new boolean value will be identical to the value diagonal to it.`);
-        temp = arr[i - 1][j - 1]; //The iterated element will move diagonally if the iterated a-character equals the iterated b-character
+        temp = arr[i - 1][j - 1];
       }
       // Otherwise if the temporary value does not equal true and the character
       // at hand (a) is already capitalized and failed to match up with the
@@ -81,7 +80,7 @@ function abbreviation(a, b) {
       // the same column
       else if (temp !== true && a.charAt(i - 1).toUpperCase() !== a.charAt(i - 1)) {
         console.log("The character at hand is not capitalized and does not match a b-string character therefore its value can be drawn vertically from the previous column value.")
-        temp = arr[i - 1][j]; //The iterated element is copied from the previous horizontal/vertical element if the uppercase version of the a-string does not equal the iterated version of the a-string
+        temp = arr[i - 1][j];
       } else {
         console.log('The values of a and b are both capitalized and do not equal one another. The given column and row value will be therefore be false.');
       }

@@ -9,7 +9,7 @@ function squareDigits(num) {
   num = num.toString().split('');
 
   num = num.map((item) => {return item * item});
-  num = num.join(''));
+  num = num.join('');
   console.log(num);
   for(let i = 0; i < num.length; i++) {
     num[i] = +num[i];

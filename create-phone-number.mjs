@@ -1,4 +1,5 @@
-
+//This function parses the cli for 10 integers and puts them into a phone
+//number input
 let input = process.argv.slice(2);
 
 createPhoneNumber(input);

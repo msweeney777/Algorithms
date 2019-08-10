@@ -1,5 +1,5 @@
-let bigNum = require('bignumber.js');
-bigNum.config({ EXPONENTIAL_AT: 1e+9, POW_PRECISION: 0});
+//let bigNum = require('bignumber.js');
+//bigNum.config({ EXPONENTIAL_AT: 1e+9, POW_PRECISION: 0});
 
 //This trickier problem finds the nth term of a fibonacci sequence using the
 //very first two terms represented as the first and second elements in the
